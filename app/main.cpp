@@ -1,35 +1,78 @@
-// Executables must have the following defined if the library contains
-// doctest definitions. For builds with this disabled, e.g. code shipped to
-// users, this can be left out.
 #ifdef ENABLE_DOCTEST_IN_LIBRARY
 #define DOCTEST_CONFIG_IMPLEMENT
-#include "doctest.h"
+#include "../tests/doctest/doctest.h"
 #endif
-
 #include <iostream>
-#include <stdlib.h>
+#include <fstream>
+#include <iomanip>
+#include <cmath>
+#include <cassert>
+#include <unistd.h>
+#include "lacze_do_gnuplota.hh"
+#include "Scena.hh"
 
-#include "exampleConfig.h"
-#include "example.h"
+using namespace std;
 
-/*
- * Simple main program that demontrates how access
- * CMake definitions (here the version number) from source code.
- */
-int main() {
-  std::cout << "C++ Boiler Plate v"
-            << PROJECT_VERSION_MAJOR
-            << "."
-            << PROJECT_VERSION_MINOR
-            << "."
-            << PROJECT_VERSION_PATCH
-            << "."
-            << PROJECT_VERSION_TWEAK
-            << std::endl;
-  std::system("cat ../LICENSE");
 
-  // Bring in the dummy class from the example source,
-  // just to show that it is accessible from main.cpp.
-  Dummy d = Dummy();
-  return d.doSomething() ? 0 : -1;
+
+
+
+int main()
+{
+  vector<Wektor3D>sciezka; 
+  double Kat,Dl;
+  Wektor3D DlXY;
+  char wyb;
+  Wektor3D Wek1{POZYCJA_STARTOWA_1};
+  Wektor3D Wek2{POZYCJA_STARTOWA_2};
+  Scena Sc(Wek1, 0, Wek2, 90);
+
+  Sc.InicjalizujScene();
+  Sc.InicjalizujLacze();
+
+  Sc.WyswietlAktPolozenie();
+  cout << endl
+       << "a - wybierz aktywnego drona\n";
+  cout << "p - zadaj parametry przelotu\n";
+  cout << "m - wyswietl menu\n";
+  cout << "\nk - koniec dzialania programu\n";
+
+  while (wyb != 'k')
+  {
+    cout<<"\nTwoj wybor: ";
+    cin >> wyb;
+
+    switch (wyb)
+    {
+    case 'a':
+      Sc.WybierzDrona();
+      break;
+
+    case 'p':
+      if (!Sc.LotDrona(Kat,Dl,DlXY,sciezka))
+        cerr << "Blad, Lot nie zostal wykonany!\n";
+      Sc.WyswietlAktPolozenie();
+      cout << endl;
+      Wektor3D::WyswietlIlosc();
+      break;
+
+    case 'm':
+      Sc.WyswietlAktPolozenie();
+      cout << endl
+           << "a - wybierz aktywnego drona\n";
+      cout << "p - zadaj parametry przelotu\n";
+      cout << "m - wyswietl menu\n";
+      cout << "\nk - koniec dzialania programu\n";
+      break;
+
+    case 'k':
+      cout << "\nKoniec dzialania programu Dragonfly\n";
+      break;
+
+    default:
+      cout << "\nBlad, podano niepoprawna opcje, sprobuj ponownie\n";
+      break;
+    }
+  }
+  return 0;
 }
