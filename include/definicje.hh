@@ -1,6 +1,12 @@
 #ifndef DEFINICJE_HH
 #define DEFINICJE_HH
 
+/**
+ @file definicje.hh
+
+ @brief Plik zawiera definicje nazw
+ **/
+
 #define PLIKWZ_SZESCIAN "bryly_wzorcowe/szescian.dat"
 #define PLIKWZ_GRANIASTOSLUP6 "bryly_wzorcowe/graniastoslup6.dat"
 #define PLIK_PLASZCZYZNY "bryly_wzorcowe/plaszczyzna.dat"

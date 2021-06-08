@@ -13,9 +13,10 @@
 
 using namespace std;
 
-
-
-
+/**
+ @file main.cpp
+ @author Michal Lesniak
+ **/
 
 int main()
 {

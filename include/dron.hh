@@ -132,10 +132,10 @@ public:
     /**
      * @brief Metoda wykonująca rotację Drona
      * 
-     * Metoda ma na celu animację obrotu Drona, w celu przemierzenia ustalonej ścieżki,
-     * w tym celu posłuży się metodą UkladWsp::UstalKat, która pozwala zmienić
-     * kąt rotacji układu
+     * Metoda ma na celu animację obrotu Drona, w tym celu posłuży się metodą UkladWsp::UstalKat,
+     * która pozwala zmienić kąt rotacji układu
      * 
+     * @param Kat - Kat obrotu drona
      * @param Lacze - Łącze, które posłuży do ukazania rotacji
      * @return true - Jeżeli operacja się powiedzie
      * @return false - Jeżeli pliki nie zostały poprawnie otwarte  
@@ -160,10 +160,12 @@ public:
      * @brief Metoda wykonująca poziomy lot Drona
      * 
      * Metoda ma na celu animację poziomego lotu Drona o zadaną długość,
-     * pod zadanym kątem. Dane te, są pobrane z ustalonej wcześniej ścieżki lotu drona.
+     * pod zadanym kątem. 
      * W tym celu posłuży się metodą UkladWsp::Przesun która pozwala na przesunięcie
      * Drona o dane współrzędne X i Y.
      * 
+     * @param DlXY - Wektor przesuniecia drona
+     * @param Dl - Dlugosc lotu
      * @param Lacze - Łącze, które posłuży do ukazania lotu
      * @return true - Jeżeli operacja się powiedzie
      * @return false - Jeżeli pliki nie zostały poprawnie otwarte 
@@ -171,17 +173,34 @@ public:
     bool WykonajPoziomyLot(const double Dl,const Wektor3D DlXY, PzG::LaczeDoGNUPlota &Lacze);
 
     /**
-     * @brief Metoda planująca oraz rysująca ścieżkę Drona
+     * @brief Metoda planująca ścieżkę Drona
      * 
      * Metoda ma na celu pobranie od użytkownika kąta rotacji ścieżki oraz jej
-     * długość, a następnie na podstawie tych parametrów narysowanie ścieżki
-     * w programie GNUPlot przy pomocy łącza
+     * długość, a następnie zaplanowac sciezke 
      * 
+     * @param Kat - Kat obrotu drona 
+     * @param Dl - Dlugosc lotu drona
+     * @param DlXY - Wektor przesuniecia drona
      * @param Lacze - Łącze, które posłuży do ukazania ścieżki
      * @return true - Jeżeli operacja się powiedzie
      * @return false - Jeżeli pliki nie zostały poprawnie otwarte 
      */
     void PlanujPoczatkowaSciezke(double &Kat,double &Dl,Wektor3D &DlXY,vector<Wektor3D>&sciezka);
+    /**
+     * @brief Metoda rysujaca sciezke Drona 
+     * 
+     * Metoda ma na celu na podstawie podanych parametrow narysowac sciezki 
+     * w programie GNUPlot przy pomocy lacza
+     * 
+     * @param Kat - Kat obrotu drona 
+     * @param Dl - Dlugosc lotu drona
+     * @param DlXY - Wektor przesuniecia drona
+     * @param sciezka - zaplanowana sciezka do narysowania
+     * @param Lacze - Łącze, które posłuży do ukazania ścieżki
+     * @return true - Jeżeli operacja się powiedzie
+     * @return false - Jeżeli pliki nie zostały poprawnie otwarte 
+    **/
+    bool NarysujSciezke(double &Kat, double &Dl, Wektor3D &DlXY,vector<Wektor3D>&sciezka, PzG::LaczeDoGNUPlota &Lacze);
 
     /**
      * @brief Metoda usuwająca ścieżkę
@@ -190,10 +209,9 @@ public:
      * oraz wyczyszczenie szablonu vector<Wektor3D> zawierającego punkty ścieżki,
      * aby było możliwe ponowne jego zapełnienie
      * 
+     * @param Wektor3D - zaplanowana sciezka 
      * @param Lacze - Łącze, które posłużyło do ukazania ścieżki
      */
-
-    bool NarysujSciezke(double &Kat, double &Dl, Wektor3D &DlXY,vector<Wektor3D>&sciezka, PzG::LaczeDoGNUPlota &Lacze);
 
     void UsunSciezke(vector<Wektor3D>&sciezka, PzG::LaczeDoGNUPlota &Lacze)
     {

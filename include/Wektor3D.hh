@@ -20,4 +20,5 @@ typedef Wektor<3> Wektor3D;
 
 
 
+
 #endif

@@ -13,18 +13,40 @@
 
 using namespace std;
 
+/**
+ * @file uklad.hh
+ * 
+ * @brief plik zawierajacy definicje klasy uklad 
+ */
+
+/** 
+ * @brief Klasa modelujaca pojecie ukladu
+ */
+
 class uklad
 {
+    /**
+    * @brief Wektor w ktorym zawiera sie polozenie danego ukladu
+    */
     Wektor3D _Polozenie;
+    /**
+     * @brief double w ktorym zawiera sie kat aktualnego obrotu ukladu
+     */
     double _Kat;
 
 public:
+    /**
+     * @brief konstruktor bezparametryczny
+     */
     uklad()
     {
         _Polozenie = Wektor3D();
         _Kat = 0;
     }
 
+    /**
+     * @brief konstruktor parametryczny 
+     */
     uklad(const Wektor3D pol,const double kat)
     {
         _Kat = kat;

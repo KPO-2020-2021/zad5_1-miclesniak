@@ -42,7 +42,6 @@ set(SOURCES          # All .cpp files in src/
     src/lacze_do_gnuplota
     src/dron
     src/Scena
-    src/sciezka
     src/uklad
 )
 set(TESTFILES        # All .cpp files in tests/

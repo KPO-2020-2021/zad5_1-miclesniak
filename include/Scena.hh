@@ -98,7 +98,10 @@ public:
      * Metoda ma na celu wykonanie operacji związanych z lotem drona, tj. pobranie
      * odpowiednich parametrów, narysowanie ścieżki, a następnie lot pionowy,
      * obrót, lot poziomy, oraz opadanie.
-     * 
+     * @param Kat - Kat obrotu drona 
+     * @param Dl - Dlugosc lotu drona
+     * @param DlXY - Wektor przesuniecia drona
+     * @param sciezka - sciezka lotu drona 
      * @return true - Jeżeli operacja się powiedzie
      * @return false - Jeżeli nastąpi problem z otwarciem plików
      */

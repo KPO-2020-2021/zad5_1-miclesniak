@@ -76,7 +76,7 @@ public:
     ++aktualne;
   }
 
-  // Wektor(const Wektor<Wymiar> &){
+  // Wektor(const Wektor<Wymiar>&){
   //   ++suma;
   //   ++aktualne;
   // }

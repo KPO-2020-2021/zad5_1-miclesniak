@@ -80,18 +80,13 @@ public:
  */
 template <class klasa>
 int Licznik<klasa>::_licz_akt;
+
 /**
  * @brief Inicjalizacja zmiennej statycznej licz_suma
  *  
  */
 template <class klasa>
 int Licznik<klasa>::_licz_suma;
-/**
- * @brief Inicjalizacja zmiennej statycznej _AktDron
- * 
- */
-
-
 
 
 #endif 

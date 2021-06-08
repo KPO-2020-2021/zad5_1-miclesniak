@@ -96,10 +96,7 @@ public:
     }
     return true;
 
-    // if (_Tab[0][0] == tmp(0, 0) && _Tab[0][1] == tmp(0, 1) && _Tab[1][0] == tmp(1, 0) && _Tab[1][1] == tmp(1, 1) && _Tab[0][2] == tmp(0, 2) && _Tab[1][2] == tmp(1, 2) && _Tab[2][0] == tmp(2, 0) && _Tab[2][1] == tmp(2, 1) && _Tab[2][2] == tmp(2, 2))
-    //   return true;
-    // else
-    //   return false;
+    
   }
 
   /**
