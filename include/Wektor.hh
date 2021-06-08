@@ -19,7 +19,7 @@
  *  Szablon, który modeluje pojęcie klasy Wektor o dowolnym rozmiarze
  */
 template <int Wymiar>
-class Wektor
+class Wektor:public Licznik<Wektor<Wymiar>>
 {
   /**
    * @brief Tablica typu double przechowujaca wartosci obiektu
@@ -27,9 +27,6 @@ class Wektor
    */
   double _wsp[Wymiar];
 
-  static int suma;
-
-  static int aktualne;
 
 public:
   /**
@@ -42,8 +39,6 @@ public:
   {
     for (double &wsp_i : _wsp)
       wsp_i = 0;
-    ++suma;
-    ++aktualne;
   }
 
  /**
@@ -57,8 +52,6 @@ public:
     int idx = -1;
     for (double Wart : LWartosci)
       (*this)[++idx] = Wart;
-    ++suma;
-    ++aktualne;
   }
 
 /**
@@ -72,14 +65,10 @@ public:
     for(int i=0; i<Wymiar;++i){
       _wsp[i] = tmp[i];
     }
-    ++suma;
-    ++aktualne;
+ 
   }
 
-  // Wektor(const Wektor<Wymiar>&){
-  //   ++suma;
-  //   ++aktualne;
-  // }
+
 
 
   /**
@@ -214,12 +203,11 @@ public:
   static void WyswietlIlosc()
   {
     
-    std::cout << "Aktualna ilosc obiektow Wektor3D: " << aktualne << std::endl;
-    std::cout << "Laczna ilosc obiektow Wektor3D: " << suma << std::endl;
+    std::cout << "Aktualna ilosc obiektow Wektor3D: " << Licznik<Wektor>::WezAkt() << std::endl;
+    std::cout << "Laczna ilosc obiektow Wektor3D: " << Licznik<Wektor>::WezSume() << std::endl;
   }
 
   ~Wektor(){
-    --aktualne;
   }
 };
 
@@ -271,8 +259,5 @@ std::ostream &operator<<(std::ostream &out, const Wektor<Wymiar> &wektor)
   return out;
 }
 
-template <int Wymiar>
-int Wektor<Wymiar>::suma;
-template <int Wymiar>
-int Wektor<Wymiar>::aktualne; 
+ 
 #endif
