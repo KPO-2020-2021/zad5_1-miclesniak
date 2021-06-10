@@ -1,0 +1,137 @@
+\hypertarget{namespace_pz_g}{}\doxysection{PzG Namespace Reference}
+\label{namespace_pz_g}\index{PzG@{PzG}}
+
+
+Moduł narzędzi umożliwiających połącznie z G\+N\+U\+Plotem.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Zestaw informacji dotyczący pliku i sposobu rysowania. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Lacze\+Do\+G\+N\+U\+Plota}}
+\begin{DoxyCompactList}\small\item\em Klasa realizuje interfejs do programu G\+N\+U\+Plot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_pz_g_aef59d70a0ee2eab473790613c3628944}{Typ\+Trybu\+Rysowania}} \{ \mbox{\hyperlink{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4}{T\+R\+\_\+2D}}, 
+\mbox{\hyperlink{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2}{T\+R\+\_\+3D}}
+ \}
+\begin{DoxyCompactList}\small\item\em Określa tryb rysowania realizowanego przez program {\ttfamily gnuplot}. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dc}{Typ\+Sposobu\+Rysowania}} \{ \mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546}{S\+R\+\_\+\+Ciagly}}, 
+\mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4}{S\+R\+\_\+\+Punktowy}}, 
+\mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317}{S\+R\+\_\+\+Punktowy\+Niejednorodny}}
+ \}
+\begin{DoxyCompactList}\small\item\em Sposób rysowania linii lub punktów. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4}{Typ\+Dostepu\+Do\+Zasobu}} \{ \mbox{\hyperlink{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826}{D\+Z\+\_\+\+Lokalny}}, 
+\mbox{\hyperlink{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4a21d511d2fe6c4e27e30ebe255405e6d9}{D\+Z\+\_\+\+Globalny}}
+ \}
+\begin{DoxyCompactList}\small\item\em Typ dostępu do plik z danymi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Moduł narzędzi umożliwiających połącznie z G\+N\+U\+Plotem. 
+
+Niniejsza przestrzeń nazw stanowi moduł logiczny zawierający narzędzia umożliwiające realizację połączenia z programem {\ttfamily gnuplot}. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4}\label{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4}} 
+\index{PzG@{PzG}!TypDostepuDoZasobu@{TypDostepuDoZasobu}}
+\index{TypDostepuDoZasobu@{TypDostepuDoZasobu}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{TypDostepuDoZasobu}{TypDostepuDoZasobu}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4}{Pz\+G\+::\+Typ\+Dostepu\+Do\+Zasobu}}}
+
+
+
+Typ dostępu do plik z danymi. 
+
+Typ dostepu do plik z danymi, tzn. czy jest on lokalny tylko z poziomu pojedynczego łącza czy też z pozmiomu wszystkich łącz \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DZ\_Lokalny@{DZ\_Lokalny}!PzG@{PzG}}\index{PzG@{PzG}!DZ\_Lokalny@{DZ\_Lokalny}}}\mbox{\Hypertarget{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826}\label{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826}} 
+D\+Z\+\_\+\+Lokalny&
+\begin{DoxyItemize}
+\item dostęp tylko z poziomu pojedynczego łącza. Dane z pliku będą wizualizowane tylko w jednym okienku graficznym odpowiadające danym łączu. 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DZ\_Globalny@{DZ\_Globalny}!PzG@{PzG}}\index{PzG@{PzG}!DZ\_Globalny@{DZ\_Globalny}}}\mbox{\Hypertarget{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4a21d511d2fe6c4e27e30ebe255405e6d9}\label{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4a21d511d2fe6c4e27e30ebe255405e6d9}} 
+D\+Z\+\_\+\+Globalny&
+\begin{DoxyItemize}
+\item dostęp ze poziomu wszystkich łączy. Dane z pliku będą wizualizowane we okienkach graficznych odpowiadającym utworzonym łączom. 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dc}\label{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dc}} 
+\index{PzG@{PzG}!TypSposobuRysowania@{TypSposobuRysowania}}
+\index{TypSposobuRysowania@{TypSposobuRysowania}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{TypSposobuRysowania}{TypSposobuRysowania}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dc}{Pz\+G\+::\+Typ\+Sposobu\+Rysowania}}}
+
+
+
+Sposób rysowania linii lub punktów. 
+
+Sposób rysowania linii lub punktów. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SR\_Ciagly@{SR\_Ciagly}!PzG@{PzG}}\index{PzG@{PzG}!SR\_Ciagly@{SR\_Ciagly}}}\mbox{\Hypertarget{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546}\label{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546}} 
+S\+R\+\_\+\+Ciagly&\begin{DoxyVerb}     - rysowana jest linia łaman łącząca kolejne punkty.
+     Współrzędne punktów \e x i \e y zadawane są w pliku tekstowym.
+     Zapiswane one muszą być w osobnych liniach.
+\end{DoxyVerb}
+ \begin{DoxyVerb}       20    30
+       41.5  62
+\end{DoxyVerb}
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SR\_Punktowy@{SR\_Punktowy}!PzG@{PzG}}\index{PzG@{PzG}!SR\_Punktowy@{SR\_Punktowy}}}\mbox{\Hypertarget{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4}\label{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4}} 
+S\+R\+\_\+\+Punktowy&\begin{DoxyVerb}     - rysowane są jednakowe punkty.
+     Współrzędne punktów \e x i \e y zadawane są w pliku tekstowym.
+     Zapiswane one muszą być w osobnych liniach, np.
+     \verbatim
+   20    30
+   41.5  62
+\end{DoxyVerb}
+  \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SR\_PunktowyNiejednorodny@{SR\_PunktowyNiejednorodny}!PzG@{PzG}}\index{PzG@{PzG}!SR\_PunktowyNiejednorodny@{SR\_PunktowyNiejednorodny}}}\mbox{\Hypertarget{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317}\label{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317}} 
+S\+R\+\_\+\+Punktowy\+Niejednorodny&\begin{DoxyVerb}     - rysowane są punkty o różnych rozmiarach.
+     Współrzędne punktów \e x i \e y oraz ich rozmiary 
+     zadawane są w pliku tekstowym.
+     Wartość rozmiaru musi być liczbą całkowitą większą od 0.
+     Współrzędne i rozmiar muszą być w osobnych liniach, np.
+     \verbatim
+   20    30   5
+   41.5  62   2
+\end{DoxyVerb}
+  \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_pz_g_aef59d70a0ee2eab473790613c3628944}\label{namespace_pz_g_aef59d70a0ee2eab473790613c3628944}} 
+\index{PzG@{PzG}!TypTrybuRysowania@{TypTrybuRysowania}}
+\index{TypTrybuRysowania@{TypTrybuRysowania}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{TypTrybuRysowania}{TypTrybuRysowania}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_pz_g_aef59d70a0ee2eab473790613c3628944}{Pz\+G\+::\+Typ\+Trybu\+Rysowania}}}
+
+
+
+Określa tryb rysowania realizowanego przez program {\ttfamily gnuplot}. 
+
+Typ wyliczeniowy określające dopuszczalne tryby rysowania realizowanego przez program {\ttfamily gnuplot}. Wybór trybu wiąże się ze zmianą sposobu interpretacji danych zawartych pliku. Jeśli np. wybrany zostanie tryb 2D, to zakłada się, że w każdej linii pliku z danymi znajdują się wartości współrzędnych {\itshape x}, {\itshape y}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TR\_2D@{TR\_2D}!PzG@{PzG}}\index{PzG@{PzG}!TR\_2D@{TR\_2D}}}\mbox{\Hypertarget{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4}\label{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4}} 
+T\+R\+\_\+2D&
+\begin{DoxyItemize}
+\item rysowanie w trybie 2D, co sprowadza się do rysowania wykresów funkcji jednej zmiennej. 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TR\_3D@{TR\_3D}!PzG@{PzG}}\index{PzG@{PzG}!TR\_3D@{TR\_3D}}}\mbox{\Hypertarget{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2}\label{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2}} 
+T\+R\+\_\+3D&
+\begin{DoxyItemize}
+\item rysowanie w trybie 3D. Oznacza to możliwość rysowania wykresów funkcji dwóch zmiennych. 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}

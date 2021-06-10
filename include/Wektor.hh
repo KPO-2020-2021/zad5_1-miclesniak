@@ -6,6 +6,7 @@
 #include "Macierz.hh"
 #include "Licznik.hh"
 
+#define MIN_DIFF 0.0001
 /*!
  * @file Wektor.hh
  * @brief Plik zawierający definicję szablon Wektor<>
@@ -79,7 +80,7 @@ public:
   * @return false Jesli vectory sa rózne
   */
   bool operator == (const Wektor<Wymiar> &Skl2) const{
-    if(_wsp[0] == Skl2[0] && _wsp[1] == Skl2[1] && _wsp[2] == _wsp[2])
+    if(fabs(_wsp[0] - Skl2[0]) <= MIN_DIFF && fabs(_wsp[1] - Skl2[1]) <= MIN_DIFF && fabs(_wsp[2] - _wsp[2]) <= MIN_DIFF)
         return true;
     else 
         return false;

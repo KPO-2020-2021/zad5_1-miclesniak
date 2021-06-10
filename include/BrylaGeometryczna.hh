@@ -93,6 +93,8 @@ public:
     {
         _NazwaPliku_BrylaFinalna = Nazwa;
     }
+
+    const Wektor3D &WezSkale()const {return _skala;}
 };
 
 #endif

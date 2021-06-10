@@ -1,0 +1,142 @@
+\hypertarget{class_bryla_geometryczna}{}\doxysection{Bryla\+Geometryczna Class Reference}
+\label{class_bryla_geometryczna}\index{BrylaGeometryczna@{BrylaGeometryczna}}
+
+
+Klasa modeluje pojęcie bryły.  
+
+
+
+
+{\ttfamily \#include $<$Bryla\+Geometryczna.\+hh$>$}
+
+
+
+Inheritance diagram for Bryla\+Geometryczna\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_bryla_geometryczna__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bryla\+Geometryczna\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_bryla_geometryczna__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \mbox{\hyperlink{class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b}{Skaluj}} (const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Wierz) const
+\begin{DoxyCompactList}\small\item\em Metoda, która służy do skalowania wierzchołków bryły. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_bryla_geometryczna_a5a877f887d4a32adf29c319dcac2334e}{Wez\+Nazwe\+Pliku\+\_\+\+Bryla\+Wzorcowa}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca nazwę pliku zawierającego bryłę wzorcową \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_bryla_geometryczna_a6a50b95a5133b9e03888441843f7e2ba}{Wez\+Nazwe\+Pliku\+\_\+\+Bryla\+Finalna}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca nazwę pliku zawierającego bryłę finalną \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bryla_geometryczna_adfb7ac9c50e98195a200da239a3d7f11}{Ustal\+Nazwe\+Pliku\+\_\+\+Bryla\+Finalna}} (const std\+::string \&Nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda ustalająca nazwę pliku zawierającego bryłę finalną \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bryla_geometryczna_aec20528fdd4ceb25a131e9189aeb1ba1}\label{class_bryla_geometryczna_aec20528fdd4ceb25a131e9189aeb1ba1}} 
+const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \& {\bfseries Wez\+Skale} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bryla_geometryczna_a4aa0b9ca95556de707c52d5b56ec5b0a}{Bryla\+Geometryczna}} (const std\+::string \&Nazwa\+Pliku\+Bryla\+Wzorcowa, const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Skala, const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Polozenie)
+\begin{DoxyCompactList}\small\item\em Konstruktor Bryły. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa modeluje pojęcie bryły. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bryla_geometryczna_a4aa0b9ca95556de707c52d5b56ec5b0a}\label{class_bryla_geometryczna_a4aa0b9ca95556de707c52d5b56ec5b0a}} 
+\index{BrylaGeometryczna@{BrylaGeometryczna}!BrylaGeometryczna@{BrylaGeometryczna}}
+\index{BrylaGeometryczna@{BrylaGeometryczna}!BrylaGeometryczna@{BrylaGeometryczna}}
+\doxysubsubsection{\texorpdfstring{BrylaGeometryczna()}{BrylaGeometryczna()}}
+{\footnotesize\ttfamily Bryla\+Geometryczna\+::\+Bryla\+Geometryczna (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Nazwa\+Pliku\+Bryla\+Wzorcowa,  }\item[{const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Skala,  }\item[{const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Polozenie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Konstruktor Bryły. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nazwa\+Pliku\+Bryla\+Wzorcowa} & -\/ Nazwa Pliku zawierającego bryłę wzorcową \\
+\hline
+{\em Skala} & -\/ Obiekt typu Wektor3D zawierający skalę bryły \\
+\hline
+{\em Polozenie} & -\/ Obiekt typu Wektor3D zawierający położenie bryły \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b}\label{class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b}} 
+\index{BrylaGeometryczna@{BrylaGeometryczna}!Skaluj@{Skaluj}}
+\index{Skaluj@{Skaluj}!BrylaGeometryczna@{BrylaGeometryczna}}
+\doxysubsubsection{\texorpdfstring{Skaluj()}{Skaluj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} Bryla\+Geometryczna\+::\+Skaluj (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Wierz }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda, która służy do skalowania wierzchołków bryły. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Wierz} & -\/ Obiekt typu Wektor3D zawierający wierzchołek bryły \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wektor3D -\/ Obiekt typu Wektor3D zawierający wierzchołek po skalowaniu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bryla_geometryczna_adfb7ac9c50e98195a200da239a3d7f11}\label{class_bryla_geometryczna_adfb7ac9c50e98195a200da239a3d7f11}} 
+\index{BrylaGeometryczna@{BrylaGeometryczna}!UstalNazwePliku\_BrylaFinalna@{UstalNazwePliku\_BrylaFinalna}}
+\index{UstalNazwePliku\_BrylaFinalna@{UstalNazwePliku\_BrylaFinalna}!BrylaGeometryczna@{BrylaGeometryczna}}
+\doxysubsubsection{\texorpdfstring{UstalNazwePliku\_BrylaFinalna()}{UstalNazwePliku\_BrylaFinalna()}}
+{\footnotesize\ttfamily void Bryla\+Geometryczna\+::\+Ustal\+Nazwe\+Pliku\+\_\+\+Bryla\+Finalna (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Nazwa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ustalająca nazwę pliku zawierającego bryłę finalną 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nazwa} & -\/ Nazwa pliku zawierającego bryłę finalną \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bryla_geometryczna_a6a50b95a5133b9e03888441843f7e2ba}\label{class_bryla_geometryczna_a6a50b95a5133b9e03888441843f7e2ba}} 
+\index{BrylaGeometryczna@{BrylaGeometryczna}!WezNazwePliku\_BrylaFinalna@{WezNazwePliku\_BrylaFinalna}}
+\index{WezNazwePliku\_BrylaFinalna@{WezNazwePliku\_BrylaFinalna}!BrylaGeometryczna@{BrylaGeometryczna}}
+\doxysubsubsection{\texorpdfstring{WezNazwePliku\_BrylaFinalna()}{WezNazwePliku\_BrylaFinalna()}}
+{\footnotesize\ttfamily const std\+::string\& Bryla\+Geometryczna\+::\+Wez\+Nazwe\+Pliku\+\_\+\+Bryla\+Finalna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zwracająca nazwę pliku zawierającego bryłę finalną 
+
+\begin{DoxyReturn}{Returns}
+const std\+::string\& -\/ nazwa pliku zawierającego bryłę finalną 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bryla_geometryczna_a5a877f887d4a32adf29c319dcac2334e}\label{class_bryla_geometryczna_a5a877f887d4a32adf29c319dcac2334e}} 
+\index{BrylaGeometryczna@{BrylaGeometryczna}!WezNazwePliku\_BrylaWzorcowa@{WezNazwePliku\_BrylaWzorcowa}}
+\index{WezNazwePliku\_BrylaWzorcowa@{WezNazwePliku\_BrylaWzorcowa}!BrylaGeometryczna@{BrylaGeometryczna}}
+\doxysubsubsection{\texorpdfstring{WezNazwePliku\_BrylaWzorcowa()}{WezNazwePliku\_BrylaWzorcowa()}}
+{\footnotesize\ttfamily const std\+::string\& Bryla\+Geometryczna\+::\+Wez\+Nazwe\+Pliku\+\_\+\+Bryla\+Wzorcowa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zwracająca nazwę pliku zawierającego bryłę wzorcową 
+
+\begin{DoxyReturn}{Returns}
+const std\+::string\& -\/ nazwa pliku zawierającego bryłę wzorcową 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Bryla\+Geometryczna.\+hh\end{DoxyCompactItemize}

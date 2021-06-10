@@ -18,6 +18,13 @@ using namespace std;
  @author Michal Lesniak
  **/
 
+/**
+ * \mainpage 
+ * Witaj na głownej stronie projektu.
+ * \image html Diagram1.png "Diagram klas wysteoujacych w programie"
+ * 
+ * 
+ */
 int main()
 {
   vector<Wektor3D>sciezka; 
