@@ -1,10 +1,10 @@
-<map id="include/definicje.hh" name="include/definicje.hh">
-<area shape="rect" id="node1" title="Plik zawiera definicje nazw." alt="" coords="144,5,292,32"/>
-<area shape="rect" id="node2" href="$uklad_8hh.html" title="plik zawierajacy definicje klasy uklad" alt="" coords="153,80,283,107"/>
-<area shape="rect" id="node3" href="$_bryla_geometryczna_8hh_source.html" title=" " alt="" coords="107,155,329,181"/>
-<area shape="rect" id="node4" href="$prostopadloscian_8hh_source.html" title=" " alt="" coords="5,229,209,256"/>
-<area shape="rect" id="node8" href="$_graniastoslup6_8hh_source.html" title=" " alt="" coords="233,229,424,256"/>
-<area shape="rect" id="node5" href="$dron_8hh.html" title="Plik zawiera definicję klasy Dron." alt="" coords="157,304,279,331"/>
-<area shape="rect" id="node6" href="$_scena_8hh.html" title="Plik zawierający definicję klasy Scena." alt="" coords="152,379,284,405"/>
-<area shape="rect" id="node7" href="$main_8cpp.html" title=" " alt="" coords="163,453,273,480"/>
+<map id="definicje.hh" name="definicje.hh">
+<area shape="rect" id="node1" title="Plik zawiera definicje nazw." alt="" coords="119,5,216,32"/>
+<area shape="rect" id="node2" href="$uklad_8hh.html" title="plik zawierajacy definicje klasy uklad" alt="" coords="128,80,207,107"/>
+<area shape="rect" id="node3" href="$_bryla_geometryczna_8hh_source.html" title=" " alt="" coords="82,155,253,181"/>
+<area shape="rect" id="node4" href="$prostopadloscian_8hh_source.html" title=" " alt="" coords="5,229,159,256"/>
+<area shape="rect" id="node8" href="$_graniastoslup6_8hh_source.html" title=" " alt="" coords="183,229,323,256"/>
+<area shape="rect" id="node5" href="$dron_8hh.html" title="Plik zawiera definicję klasy Dron." alt="" coords="132,304,203,331"/>
+<area shape="rect" id="node6" href="$_scena_8hh.html" title="Plik zawierający definicję klasy Scena." alt="" coords="127,379,208,405"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title=" " alt="" coords="72,453,263,495"/>
 </map>

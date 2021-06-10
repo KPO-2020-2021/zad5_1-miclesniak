@@ -1,13 +1,13 @@
-<map id="include/Macierz.hh" name="include/Macierz.hh">
-<area shape="rect" id="node1" title="Plik zawiera definicje szablonu Macierz&lt;&gt; oraz jej metod." alt="" coords="146,5,290,32"/>
-<area shape="rect" id="node2" href="$_wektor_8hh.html" title="Plik zawierający definicję szablon Wektor&lt;&gt;" alt="" coords="75,80,214,107"/>
-<area shape="rect" id="node11" href="$_macierz3x3_8hh.html" title="Plik zawierający definicję klasy Macierz3x3." alt="" coords="227,155,395,181"/>
-<area shape="rect" id="node3" href="$_wektor3_d_8hh.html" title="Plik zawierający definicję klasy Wektor3D." alt="" coords="46,155,203,181"/>
-<area shape="rect" id="node4" href="$uklad_8hh.html" title="plik zawierajacy definicje klasy uklad" alt="" coords="153,229,283,256"/>
-<area shape="rect" id="node5" href="$_bryla_geometryczna_8hh_source.html" title=" " alt="" coords="107,304,329,331"/>
-<area shape="rect" id="node6" href="$prostopadloscian_8hh_source.html" title=" " alt="" coords="5,379,209,405"/>
-<area shape="rect" id="node10" href="$_graniastoslup6_8hh_source.html" title=" " alt="" coords="233,379,424,405"/>
-<area shape="rect" id="node7" href="$dron_8hh.html" title="Plik zawiera definicję klasy Dron." alt="" coords="157,453,279,480"/>
-<area shape="rect" id="node8" href="$_scena_8hh.html" title="Plik zawierający definicję klasy Scena." alt="" coords="152,528,284,555"/>
-<area shape="rect" id="node9" href="$main_8cpp.html" title=" " alt="" coords="163,603,273,629"/>
+<map id="Macierz.hh" name="Macierz.hh">
+<area shape="rect" id="node1" title="Plik zawiera definicje szablonu Macierz&lt;&gt; oraz jej metod." alt="" coords="119,5,213,32"/>
+<area shape="rect" id="node2" href="$_wektor_8hh.html" title="Plik zawierający definicję szablon Wektor&lt;&gt;" alt="" coords="83,80,169,107"/>
+<area shape="rect" id="node11" href="$_macierz3x3_8hh.html" title="Plik zawierający definicję klasy Macierz3x3." alt="" coords="177,155,294,181"/>
+<area shape="rect" id="node3" href="$_wektor3_d_8hh.html" title="Plik zawierający definicję klasy Wektor3D." alt="" coords="46,155,153,181"/>
+<area shape="rect" id="node4" href="$uklad_8hh.html" title="plik zawierajacy definicje klasy uklad" alt="" coords="128,229,207,256"/>
+<area shape="rect" id="node5" href="$_bryla_geometryczna_8hh_source.html" title=" " alt="" coords="82,304,253,331"/>
+<area shape="rect" id="node6" href="$prostopadloscian_8hh_source.html" title=" " alt="" coords="5,379,159,405"/>
+<area shape="rect" id="node10" href="$_graniastoslup6_8hh_source.html" title=" " alt="" coords="183,379,323,405"/>
+<area shape="rect" id="node7" href="$dron_8hh.html" title="Plik zawiera definicję klasy Dron." alt="" coords="132,453,203,480"/>
+<area shape="rect" id="node8" href="$_scena_8hh.html" title="Plik zawierający definicję klasy Scena." alt="" coords="127,528,208,555"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title=" " alt="" coords="72,603,263,644"/>
 </map>

@@ -15,13 +15,14 @@ using namespace std;
 
 /**
  @file main.cpp
- @author Michal Lesniak
+
  **/
 
 /**
  * \mainpage 
- * Witaj na głownej stronie projektu.
- * \image html Diagram1.png "Diagram klas wysteoujacych w programie"
+ * \author Michal Lesniak
+ * \n Diagram klas:
+ * \image html Diagram1.png 
  * 
  * 
  */

@@ -1,5 +1,5 @@
-<map id="include/dron.hh" name="include/dron.hh">
-<area shape="rect" id="node1" title="Plik zawiera definicję klasy Dron." alt="" coords="485,5,608,32"/>
+<map id="dron.hh" name="dron.hh">
+<area shape="rect" id="node1" title="Plik zawiera definicję klasy Dron." alt="" coords="511,5,582,32"/>
 <area shape="rect" id="node2" href="$prostopadloscian_8hh_source.html" title=" " alt="" coords="246,80,399,107"/>
 <area shape="rect" id="node19" href="$_graniastoslup6_8hh_source.html" title=" " alt="" coords="423,80,563,107"/>
 <area shape="rect" id="node20" href="$lacze__do__gnuplota_8hh.html" title=" " alt="" coords="520,229,682,256"/>

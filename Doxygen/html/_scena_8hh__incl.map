@@ -1,5 +1,5 @@
-<map id="include/Scena.hh" name="include/Scena.hh">
-<area shape="rect" id="node1" title="Plik zawierający definicję klasy Scena." alt="" coords="480,5,612,32"/>
+<map id="Scena.hh" name="Scena.hh">
+<area shape="rect" id="node1" title="Plik zawierający definicję klasy Scena." alt="" coords="506,5,587,32"/>
 <area shape="rect" id="node2" href="$dron_8hh.html" title="Plik zawiera definicję klasy Dron." alt="" coords="511,80,582,107"/>
 <area shape="rect" id="node3" href="$prostopadloscian_8hh_source.html" title=" " alt="" coords="246,155,399,181"/>
 <area shape="rect" id="node20" href="$_graniastoslup6_8hh_source.html" title=" " alt="" coords="423,155,563,181"/>
