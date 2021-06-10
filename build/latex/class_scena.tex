@@ -1,0 +1,137 @@
+\hypertarget{class_scena}{}\doxysection{Scena Class Reference}
+\label{class_scena}\index{Scena@{Scena}}
+
+
+Klasa modeluje pojęcie Sceny.  
+
+
+
+
+{\ttfamily \#include $<$Scena.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scena_a3a70cc32e9949a9fb48041daf1404689}{Scena}} (const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Polozenie1, const double Kat\+Obrotu1, const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Polozenie2, const double Kat\+Obrotu2)
+\begin{DoxyCompactList}\small\item\em Konstruktor Sceny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scena_ac14c1edb0c4a8cc24de59281dc7bc8c9}{Wybierz\+Drona}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca na wybranie aktywnego drona. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scena_af3ab2270aeeecd5b9785564880a4d25a}{Wyswietl\+Akt\+Polozenie}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca na wyświetlenie położenia aktywnego drona. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scena_a296cfc0d95b90f8818fc5a1bbd073929}{Inicjalizuj\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Metoda inicjalizująca scenę \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scena_abfa09a17e8374dee288140142e75d7e5}{Inicjalizuj\+Lacze}} ()
+\begin{DoxyCompactList}\small\item\em Metoda inicjalizująca łącze. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scena_a32cf0c1bce488f363ca62bd57a5380be}{Lot\+Drona}} (double \&Kat, double \&Dl, \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Dl\+XY, vector$<$ \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} $>$ \&sciezka)
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca na lot drona. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa modeluje pojęcie Sceny. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scena_a3a70cc32e9949a9fb48041daf1404689}\label{class_scena_a3a70cc32e9949a9fb48041daf1404689}} 
+\index{Scena@{Scena}!Scena@{Scena}}
+\index{Scena@{Scena}!Scena@{Scena}}
+\doxysubsubsection{\texorpdfstring{Scena()}{Scena()}}
+{\footnotesize\ttfamily Scena\+::\+Scena (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Polozenie1,  }\item[{const double}]{Kat\+Obrotu1,  }\item[{const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Polozenie2,  }\item[{const double}]{Kat\+Obrotu2 }\end{DoxyParamCaption})}
+
+
+
+Konstruktor Sceny. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Polozenie1} & -\/ Położenie pierwszego drona \\
+\hline
+{\em Kat\+Obrotu1} & -\/ kąt obrotu pierwszego drona \\
+\hline
+{\em Polozenie2} & -\/ Położenie drugiego drona \\
+\hline
+{\em Kat\+Obrotu2} & -\/ kąt obrotu drugiego drona \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scena_abfa09a17e8374dee288140142e75d7e5}\label{class_scena_abfa09a17e8374dee288140142e75d7e5}} 
+\index{Scena@{Scena}!InicjalizujLacze@{InicjalizujLacze}}
+\index{InicjalizujLacze@{InicjalizujLacze}!Scena@{Scena}}
+\doxysubsubsection{\texorpdfstring{InicjalizujLacze()}{InicjalizujLacze()}}
+{\footnotesize\ttfamily void Scena\+::\+Inicjalizuj\+Lacze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda inicjalizująca łącze. 
+
+Metoda ma na celu skonfigurowanie łącza oraz narysowanie początkowej pozycji dronóœ \mbox{\Hypertarget{class_scena_a296cfc0d95b90f8818fc5a1bbd073929}\label{class_scena_a296cfc0d95b90f8818fc5a1bbd073929}} 
+\index{Scena@{Scena}!InicjalizujScene@{InicjalizujScene}}
+\index{InicjalizujScene@{InicjalizujScene}!Scena@{Scena}}
+\doxysubsubsection{\texorpdfstring{InicjalizujScene()}{InicjalizujScene()}}
+{\footnotesize\ttfamily bool Scena\+::\+Inicjalizuj\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda inicjalizująca scenę 
+
+Metoda ma na celu zapisanie współrzędnych początkowych dronów do układu globalnego
+
+\begin{DoxyReturn}{Returns}
+true -\/ Jeżeli operacja się powiedzie 
+
+false -\/ Jeżeli nastąpi problem z otwarciem plików 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scena_a32cf0c1bce488f363ca62bd57a5380be}\label{class_scena_a32cf0c1bce488f363ca62bd57a5380be}} 
+\index{Scena@{Scena}!LotDrona@{LotDrona}}
+\index{LotDrona@{LotDrona}!Scena@{Scena}}
+\doxysubsubsection{\texorpdfstring{LotDrona()}{LotDrona()}}
+{\footnotesize\ttfamily bool Scena\+::\+Lot\+Drona (\begin{DoxyParamCaption}\item[{double \&}]{Kat,  }\item[{double \&}]{Dl,  }\item[{\mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Dl\+XY,  }\item[{vector$<$ \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} $>$ \&}]{sciezka }\end{DoxyParamCaption})}
+
+
+
+Metoda pozwalająca na lot drona. 
+
+Metoda ma na celu wykonanie operacji związanych z lotem drona, tj. pobranie odpowiednich parametrów, narysowanie ścieżki, a następnie lot pionowy, obrót, lot poziomy, oraz opadanie. 
+\begin{DoxyParams}{Parameters}
+{\em Kat} & -\/ Kat obrotu drona \\
+\hline
+{\em Dl} & -\/ Dlugosc lotu drona \\
+\hline
+{\em Dl\+XY} & -\/ \mbox{\hyperlink{class_wektor}{Wektor}} przesuniecia drona \\
+\hline
+{\em sciezka} & -\/ sciezka lotu drona \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ Jeżeli operacja się powiedzie 
+
+false -\/ Jeżeli nastąpi problem z otwarciem plików 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scena_ac14c1edb0c4a8cc24de59281dc7bc8c9}\label{class_scena_ac14c1edb0c4a8cc24de59281dc7bc8c9}} 
+\index{Scena@{Scena}!WybierzDrona@{WybierzDrona}}
+\index{WybierzDrona@{WybierzDrona}!Scena@{Scena}}
+\doxysubsubsection{\texorpdfstring{WybierzDrona()}{WybierzDrona()}}
+{\footnotesize\ttfamily void Scena\+::\+Wybierz\+Drona (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda pozwalająca na wybranie aktywnego drona. 
+
+\mbox{\Hypertarget{class_scena_af3ab2270aeeecd5b9785564880a4d25a}\label{class_scena_af3ab2270aeeecd5b9785564880a4d25a}} 
+\index{Scena@{Scena}!WyswietlAktPolozenie@{WyswietlAktPolozenie}}
+\index{WyswietlAktPolozenie@{WyswietlAktPolozenie}!Scena@{Scena}}
+\doxysubsubsection{\texorpdfstring{WyswietlAktPolozenie()}{WyswietlAktPolozenie()}}
+{\footnotesize\ttfamily void Scena\+::\+Wyswietl\+Akt\+Polozenie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda pozwalająca na wyświetlenie położenia aktywnego drona. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michal/zad5\+\_\+1-\/miclesniak/include/\mbox{\hyperlink{_scena_8hh}{Scena.\+hh}}\item 
+/home/michal/zad5\+\_\+1-\/miclesniak/src/Scena.\+cpp\end{DoxyCompactItemize}

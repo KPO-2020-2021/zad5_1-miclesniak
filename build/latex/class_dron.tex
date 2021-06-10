@@ -1,0 +1,265 @@
+\hypertarget{class_dron}{}\doxysection{Dron Class Reference}
+\label{class_dron}\index{Dron@{Dron}}
+
+
+Klasa modeluje pojęcie drona.  
+
+
+
+
+{\ttfamily \#include $<$dron.\+hh$>$}
+
+Inheritance diagram for Dron\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dron}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dron_afc9793d8bb7975b8f8c1960b9a485f84}{Dron}} (const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Polozenie, const double Kat\+Orientacji)
+\begin{DoxyCompactList}\small\item\em Konstruktor Drona. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dron_a93d08cb51d9659816e87e08f21b71a49}{Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Drona}} () const
+\begin{DoxyCompactList}\small\item\em Metoda transformująca współrzędne Drona do Sceny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dron_a2572b34c50a2b321109eee797fd9ac98}{Wyswietl\+Pol}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wyświetla aktualne położenie drona, tj. jego współrzędne X, Y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dron_ad1273a5eda7b16f7373eda5d9d51bd48}{Wyswietl\+Akt}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wyświetla komunikat, że dany dron jest aktywny. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dron_a52ee50f88ee1e9e28f8e7abd06426c69}{Wykonaj\+Obrot}} (const double Kat, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda wykonująca rotację Drona. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dron_a7806d0312e7e58912780d0f016d58c79}{Wykonaj\+Pionowy\+Lot}} (double Dlugosc\+Lotu, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda wykonująca pionowy lot Drona. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dron_abf2ca7c32ddf87262ea144621bc19c1a}{Wykonaj\+Poziomy\+Lot}} (const double Dl, const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} Dl\+XY, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda wykonująca poziomy lot Drona. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dron_ad1e41d6fe5988657d633403bde9abc37}{Planuj\+Poczatkowa\+Sciezke}} (double \&Kat, double \&Dl, \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Dl\+XY, vector$<$ \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} $>$ \&sciezka)
+\begin{DoxyCompactList}\small\item\em Metoda planująca ścieżkę Drona. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dron_a72b95f77e8b94a9f7ec0dde89d6fdf92}{Narysuj\+Sciezke}} (double \&Kat, double \&Dl, \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&Dl\+XY, vector$<$ \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} $>$ \&sciezka, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda rysujaca sciezke Drona. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dron_a5170857483c88d4e4f94f877c7416e30}{Usun\+Sciezke}} (vector$<$ \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} $>$ \&sciezka, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda usuwająca ścieżkę \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa modeluje pojęcie drona. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dron_afc9793d8bb7975b8f8c1960b9a485f84}\label{class_dron_afc9793d8bb7975b8f8c1960b9a485f84}} 
+\index{Dron@{Dron}!Dron@{Dron}}
+\index{Dron@{Dron}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{Dron()}{Dron()}}
+{\footnotesize\ttfamily Dron\+::\+Dron (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Polozenie,  }\item[{const double}]{Kat\+Orientacji }\end{DoxyParamCaption})}
+
+
+
+Konstruktor Drona. 
+
+Konstruktor ten przekazuje podane Położenie oraz Kąt Orientacji do Drona, a także wywołuje konstruktory brył z odpowiednimi, zdefiniowanymi parametrami, takimi jak skala, czy pozycja względem drona. Konstruktor także przypisuje każdej bryle odpowiednią nazwę pliku, a także przyporządkowuje Dronowi jego numer oraz zwiększa licznik dronów
+
+
+\begin{DoxyParams}{Parameters}
+{\em Polozenie} & -\/ Obiekt typu Wektor3D zawierająćy Położenie Drona względem sceny \\
+\hline
+{\em Kat\+Orientacji} & -\/ Liczba typu double zawierająca kąt orientacji drona w stopniach \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dron_a72b95f77e8b94a9f7ec0dde89d6fdf92}\label{class_dron_a72b95f77e8b94a9f7ec0dde89d6fdf92}} 
+\index{Dron@{Dron}!NarysujSciezke@{NarysujSciezke}}
+\index{NarysujSciezke@{NarysujSciezke}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{NarysujSciezke()}{NarysujSciezke()}}
+{\footnotesize\ttfamily bool Dron\+::\+Narysuj\+Sciezke (\begin{DoxyParamCaption}\item[{double \&}]{Kat,  }\item[{double \&}]{Dl,  }\item[{\mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Dl\+XY,  }\item[{vector$<$ \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} $>$ \&}]{sciezka,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze }\end{DoxyParamCaption})}
+
+
+
+Metoda rysujaca sciezke Drona. 
+
+Metoda ma na celu na podstawie podanych parametrow narysowac sciezki w programie G\+N\+U\+Plot przy pomocy lacza
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kat} & -\/ Kat obrotu drona \\
+\hline
+{\em Dl} & -\/ Dlugosc lotu drona \\
+\hline
+{\em Dl\+XY} & -\/ \mbox{\hyperlink{class_wektor}{Wektor}} przesuniecia drona \\
+\hline
+{\em sciezka} & -\/ zaplanowana sciezka do narysowania \\
+\hline
+{\em Lacze} & -\/ Łącze, które posłuży do ukazania ścieżki \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ Jeżeli operacja się powiedzie 
+
+false -\/ Jeżeli pliki nie zostały poprawnie otwarte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dron_a93d08cb51d9659816e87e08f21b71a49}\label{class_dron_a93d08cb51d9659816e87e08f21b71a49}} 
+\index{Dron@{Dron}!Oblicz\_i\_Zapisz\_WspGlbDrona@{Oblicz\_i\_Zapisz\_WspGlbDrona}}
+\index{Oblicz\_i\_Zapisz\_WspGlbDrona@{Oblicz\_i\_Zapisz\_WspGlbDrona}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{Oblicz\_i\_Zapisz\_WspGlbDrona()}{Oblicz\_i\_Zapisz\_WspGlbDrona()}}
+{\footnotesize\ttfamily bool Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Drona (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda transformująca współrzędne Drona do Sceny. 
+
+Metoda Otwiera pliki brył wzorcowych, transformuje każdą bryłę zawartą w dronie do jego układu współrzędnych, a następnie do globalnego układu współrzędnych
+
+\begin{DoxyReturn}{Returns}
+true -\/ Jeżeli operacja się powiedzie 
+
+false -\/ Jeżeli pliki nie zostały poprawnie otwarte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dron_ad1e41d6fe5988657d633403bde9abc37}\label{class_dron_ad1e41d6fe5988657d633403bde9abc37}} 
+\index{Dron@{Dron}!PlanujPoczatkowaSciezke@{PlanujPoczatkowaSciezke}}
+\index{PlanujPoczatkowaSciezke@{PlanujPoczatkowaSciezke}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{PlanujPoczatkowaSciezke()}{PlanujPoczatkowaSciezke()}}
+{\footnotesize\ttfamily void Dron\+::\+Planuj\+Poczatkowa\+Sciezke (\begin{DoxyParamCaption}\item[{double \&}]{Kat,  }\item[{double \&}]{Dl,  }\item[{\mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} \&}]{Dl\+XY,  }\item[{vector$<$ \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} $>$ \&}]{sciezka }\end{DoxyParamCaption})}
+
+
+
+Metoda planująca ścieżkę Drona. 
+
+Metoda ma na celu pobranie od użytkownika kąta rotacji ścieżki oraz jej długość, a następnie zaplanowac sciezke
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kat} & -\/ Kat obrotu drona \\
+\hline
+{\em Dl} & -\/ Dlugosc lotu drona \\
+\hline
+{\em Dl\+XY} & -\/ \mbox{\hyperlink{class_wektor}{Wektor}} przesuniecia drona \\
+\hline
+{\em Lacze} & -\/ Łącze, które posłuży do ukazania ścieżki \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ Jeżeli operacja się powiedzie 
+
+false -\/ Jeżeli pliki nie zostały poprawnie otwarte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dron_a5170857483c88d4e4f94f877c7416e30}\label{class_dron_a5170857483c88d4e4f94f877c7416e30}} 
+\index{Dron@{Dron}!UsunSciezke@{UsunSciezke}}
+\index{UsunSciezke@{UsunSciezke}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{UsunSciezke()}{UsunSciezke()}}
+{\footnotesize\ttfamily void Dron\+::\+Usun\+Sciezke (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}} $>$ \&}]{sciezka,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda usuwająca ścieżkę 
+
+Metoda ma na celu usunięcie pliku zawierającego ścieżkę drona z łącza, oraz wyczyszczenie szablonu vector$<$\+Wektor3\+D$>$ zawierającego punkty ścieżki, aby było możliwe ponowne jego zapełnienie
+
+
+\begin{DoxyParams}{Parameters}
+{\em Wektor3D} & -\/ zaplanowana sciezka \\
+\hline
+{\em Lacze} & -\/ Łącze, które posłużyło do ukazania ścieżki \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dron_a52ee50f88ee1e9e28f8e7abd06426c69}\label{class_dron_a52ee50f88ee1e9e28f8e7abd06426c69}} 
+\index{Dron@{Dron}!WykonajObrot@{WykonajObrot}}
+\index{WykonajObrot@{WykonajObrot}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{WykonajObrot()}{WykonajObrot()}}
+{\footnotesize\ttfamily bool Dron\+::\+Wykonaj\+Obrot (\begin{DoxyParamCaption}\item[{const double}]{Kat,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze }\end{DoxyParamCaption})}
+
+
+
+Metoda wykonująca rotację Drona. 
+
+Metoda ma na celu animację obrotu Drona, w tym celu posłuży się metodą Uklad\+Wsp\+::\+Ustal\+Kat, która pozwala zmienić kąt rotacji układu
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kat} & -\/ Kat obrotu drona \\
+\hline
+{\em Lacze} & -\/ Łącze, które posłuży do ukazania rotacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ Jeżeli operacja się powiedzie 
+
+false -\/ Jeżeli pliki nie zostały poprawnie otwarte ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dron_a7806d0312e7e58912780d0f016d58c79}\label{class_dron_a7806d0312e7e58912780d0f016d58c79}} 
+\index{Dron@{Dron}!WykonajPionowyLot@{WykonajPionowyLot}}
+\index{WykonajPionowyLot@{WykonajPionowyLot}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{WykonajPionowyLot()}{WykonajPionowyLot()}}
+{\footnotesize\ttfamily bool Dron\+::\+Wykonaj\+Pionowy\+Lot (\begin{DoxyParamCaption}\item[{double}]{Dlugosc\+Lotu,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze }\end{DoxyParamCaption})}
+
+
+
+Metoda wykonująca pionowy lot Drona. 
+
+Metoda ma na celu wykonanie pionowego lotu Drona o zadaną, zdefiniowaną długość lotu. w tym celu posłuży się metodą Uklad\+Wsp\+::\+Wznies, która pozwala zmienić współrzędną \textquotesingle{}Z\textquotesingle{} Układu
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dlugosc\+Lotu} & -\/ Liczba typu double przechowująca wartość długości lotu \\
+\hline
+{\em Lacze} & -\/ Łącze, które posłuży do ukazania lotu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ Jeżeli operacja się powiedzie 
+
+false -\/ Jeżeli pliki nie zostały poprawnie otwarte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dron_abf2ca7c32ddf87262ea144621bc19c1a}\label{class_dron_abf2ca7c32ddf87262ea144621bc19c1a}} 
+\index{Dron@{Dron}!WykonajPoziomyLot@{WykonajPoziomyLot}}
+\index{WykonajPoziomyLot@{WykonajPoziomyLot}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{WykonajPoziomyLot()}{WykonajPoziomyLot()}}
+{\footnotesize\ttfamily bool Dron\+::\+Wykonaj\+Poziomy\+Lot (\begin{DoxyParamCaption}\item[{const double}]{Dl,  }\item[{const \mbox{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}}}]{Dl\+XY,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze }\end{DoxyParamCaption})}
+
+
+
+Metoda wykonująca poziomy lot Drona. 
+
+Metoda ma na celu animację poziomego lotu Drona o zadaną długość, pod zadanym kątem. W tym celu posłuży się metodą Uklad\+Wsp\+::\+Przesun która pozwala na przesunięcie Drona o dane współrzędne X i Y.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dl\+XY} & -\/ \mbox{\hyperlink{class_wektor}{Wektor}} przesuniecia drona \\
+\hline
+{\em Dl} & -\/ Dlugosc lotu \\
+\hline
+{\em Lacze} & -\/ Łącze, które posłuży do ukazania lotu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ Jeżeli operacja się powiedzie 
+
+false -\/ Jeżeli pliki nie zostały poprawnie otwarte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dron_ad1273a5eda7b16f7373eda5d9d51bd48}\label{class_dron_ad1273a5eda7b16f7373eda5d9d51bd48}} 
+\index{Dron@{Dron}!WyswietlAkt@{WyswietlAkt}}
+\index{WyswietlAkt@{WyswietlAkt}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{WyswietlAkt()}{WyswietlAkt()}}
+{\footnotesize\ttfamily void Dron\+::\+Wyswietl\+Akt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda wyświetla komunikat, że dany dron jest aktywny. 
+
+\mbox{\Hypertarget{class_dron_a2572b34c50a2b321109eee797fd9ac98}\label{class_dron_a2572b34c50a2b321109eee797fd9ac98}} 
+\index{Dron@{Dron}!WyswietlPol@{WyswietlPol}}
+\index{WyswietlPol@{WyswietlPol}!Dron@{Dron}}
+\doxysubsubsection{\texorpdfstring{WyswietlPol()}{WyswietlPol()}}
+{\footnotesize\ttfamily void Dron\+::\+Wyswietl\+Pol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda wyświetla aktualne położenie drona, tj. jego współrzędne X, Y. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michal/zad5\+\_\+1-\/miclesniak/include/\mbox{\hyperlink{dron_8hh}{dron.\+hh}}\item 
+/home/michal/zad5\+\_\+1-\/miclesniak/src/\mbox{\hyperlink{dron_8cpp}{dron.\+cpp}}\end{DoxyCompactItemize}
