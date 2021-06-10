@@ -54,7 +54,7 @@ void Scena::InicjalizujLacze()
     _Lacze.DodajNazwePliku("PlikFinalny_Dron2_Rotor2.dat");
     _Lacze.DodajNazwePliku("PlikFinalny_Dron2_Rotor3.dat");
     _Lacze.DodajNazwePliku("PlikFinalny_Dron2_Rotor4.dat");
-    _Lacze.DodajNazwePliku("bryly_wzorcowe/plaszczyzna.dat");
+    _Lacze.DodajNazwePliku(PLIK_PLASZCZYZNY);
     _Lacze.Rysuj();
 }
 

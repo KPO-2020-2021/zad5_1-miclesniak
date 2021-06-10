@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/example.h
+../tests/doctest/doctest.h
+../tests/doctest/doctest.h
+
 /home/michal/zad5_1-miclesniak/include/BrylaGeometryczna.hh
 uklad.hh
 /home/michal/zad5_1-miclesniak/include/uklad.hh
@@ -175,6 +179,12 @@ sys/time.h
 -
 unistd.h
 -
+
+/home/michal/zad5_1-miclesniak/tests/dummy.cpp
+../tests/doctest/doctest.h
+/home/michal/zad5_1-miclesniak/tests/doctest/doctest.h
+example.h
+/home/michal/zad5_1-miclesniak/tests/example.h
 
 /home/michal/zad5_1-miclesniak/tests/main.cpp
 ../tests/doctest/doctest.h

@@ -7,9 +7,9 @@
  @brief Plik zawiera definicje nazw
  **/
 
-#define PLIKWZ_SZESCIAN "bryly_wzorcowe/szescian.dat"
-#define PLIKWZ_GRANIASTOSLUP6 "bryly_wzorcowe/graniastoslup6.dat"
-#define PLIK_PLASZCZYZNY "bryly_wzorcowe/plaszczyzna.dat"
+#define PLIKWZ_SZESCIAN "dat/bryly_wzorcowe/szescian.dat"
+#define PLIKWZ_GRANIASTOSLUP6 "dat/bryly_wzorcowe/graniastoslup6.dat"
+#define PLIK_PLASZCZYZNY "dat/bryly_wzorcowe/plaszczyzna.dat"
 #define PLIK_TRASY_PRZELOTU "dat/trasa_przelotu.dat"
 #define SCIEZKA_DO_PLIKU "PlikFinalny_Dron"
 #define NAZWA_ROTORA "_Rotor"

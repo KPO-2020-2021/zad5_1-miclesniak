@@ -65,6 +65,8 @@ target_link_libraries(${LIBRARY_NAME} PUBLIC doctest)
 target_set_warnings(${LIBRARY_NAME} ENABLE ALL AS_ERROR ALL DISABLE Annoying)
 # target_compile_options(${LIBRARY_NAME} ... )  # For setting manually.
 
+file(COPY dat/bryly_wzorcowe DESTINATION dat)
+
 # Add an executable for the file app/main.cpp.
 # If you add more executables, copy these lines accordingly.
 add_executable(main app/main.cpp)   # Name of exec. and location of file.
